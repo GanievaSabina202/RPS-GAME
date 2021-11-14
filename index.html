@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <!-- B5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- custom -->
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body style="background-image: url('./assets/bg.jpg');">
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12  d-flex align-items-center justify-content-center w-100 mt-2">
+                    <div class="wrapper">
+                        <div class="img-wrapper">
+                            <img id="one" data-bs-toggle="tooltip" data-bs-placement="bottom" title="rock" src="./assets/r.png" alt="rock">
+                            <img data-bs-toggle="tooltip" data-bs-placement="bottom" title="paper" src="./assets/p.png" alt="paper">
+                            <img data-bs-toggle="tooltip" data-bs-placement="bottom" title="scissors" src="./assets/s.png" alt="scissors">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-between customRow">
+                <div class="col-6 col-wrapper">
+                    <div class="rightWrapper">
+                        <div class="user mt-1">
+                            <img src="./assets/avatar.jpg" alt="">
+                            <p class="m-0 p-0">Me: <span id="gameUserScore">0</span></p>
+                            <p id="win1">Begin</p>
+                        </div>
+                        <div class="imgwrap">
+                            <img id="gameUserImg" src="./assets/p.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6  col-wrapper">
+                    <div class="leftWrapper">
+                        <div class="user mt-1">
+                            <img src="./assets/avatarboy.png" alt="">
+                            <p class="m-0 p-0">You: <span id="gameCompScore">0</span></p>
+                            <p id="win2">Begin</p>
+                        </div>
+                        <div class="imgwrap">
+                            <img id="gameCompImg" src="./assets/p.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- B5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- custom -->
+    <script src="./src/main.js"></script>
+</body>
+
+</html>
